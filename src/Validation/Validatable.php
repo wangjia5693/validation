@@ -1,0 +1,27 @@
+<?php
+
+/*
+ * Created by PhpStorm.
+ * For the full copyright and license information, please view the "LICENSE.md"
+ * file that was distributed with this source code.
+ */
+
+namespace Validation;
+
+/** Interface for validation rules */
+interface Validatable
+{
+    public function assert($input);
+
+    public function check($input);
+
+    public function getName();
+
+    public function reportError($input, array $relatedExceptions = []);
+
+    public function setName($name);
+
+    public function setTemplate($template);
+
+    public function validate($input);
+}
