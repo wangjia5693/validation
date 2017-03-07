@@ -1,0 +1,16 @@
+{
+    "name": "wj/validation",
+    "description": "验证类",
+    "type": "library",
+    "version": "master",
+    "require": {
+        "php": ">=5.4"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+	"psr-4": {
+	    "wj/validation\\": "src"
+	}
+    }
+}
